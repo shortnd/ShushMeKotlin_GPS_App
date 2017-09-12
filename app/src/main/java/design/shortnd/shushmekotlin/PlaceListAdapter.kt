@@ -15,7 +15,9 @@ open class PlaceListAdapter(mainActivity: MainActivity) : RecyclerView.Adapter<P
      *
      * @param context the calling context/activity
      */
-    fun PlaceListAdapter(context: Context) { this.mContext = context }
+    fun PlaceListAdapter(context: Context) {
+        this.mContext = context
+    }
 
     /**
      * Called when RecyclerView needs a new ViewHolder of the given type to represent an item
@@ -46,7 +48,9 @@ open class PlaceListAdapter(mainActivity: MainActivity) : RecyclerView.Adapter<P
      *
      * @return Number of items in the cursor, or 0 if null
      */
-    override fun getItemCount(): Int { return 0 }
+    override fun getItemCount(): Int {
+        return 0
+    }
 
     /**
      * PlaceViewHolder class for the recycler view item
@@ -57,17 +61,4 @@ open class PlaceListAdapter(mainActivity: MainActivity) : RecyclerView.Adapter<P
         private var addressTextView: TextView = itemView.findViewById(R.id.address_text_view)
 
     }
-
-//    internal inner class PlaceViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-//
-//        var nameTextView: TextView
-//        var addressTextView: TextView
-//
-//        init {
-//            nameTextView = itemView.findViewById(R.id.name_text_view) as TextView
-//            addressTextView = itemView.findViewById(R.id.address_text_view) as TextView
-//        }
-//
-//    }
-
 }
